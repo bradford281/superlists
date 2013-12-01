@@ -28,5 +28,5 @@ def new_list(request):
         error_text = "You can't have an empty list item"
         return render(request, 'home.html', {"error": error_text})
 
-    return redirect('/lists/%d/' % (list_.id,))
+    return redirect(list_)
 
